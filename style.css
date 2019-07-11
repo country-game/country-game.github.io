@@ -3,7 +3,16 @@ h1 {
   font-size: 100px;
 }
 
-iframe {
-  background: transparent;
-  border: 1px solid #dedede;
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+}
+
+th {
+  background-color: black;
+  color: white;
 }
