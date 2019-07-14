@@ -5,6 +5,7 @@
     <meta name="description" content="Country Game Website" />
     <meta name="author" content="Cal Hagner, Matt Gleich" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Country Game</title>
   </head>
   <body>
@@ -12,8 +13,21 @@
       <h1>Country Game</h1>
     </div>
     <div id="table">
-      <iframe src="https://sheetsu.com/a/t/ee50adeb70c0?embedded=true"
-      width="100%" height="450" frameBorder="0"></iframe>
-    </div>
+    <table align="center">
+      <thead>
+        <th>Name</th>
+        <th>Money</th>
+        <th>Debt</th>
+        <th>Territory Controlled</th>
+      </thead>
+      <tbody sheetsu="https://sheetsu.com/apis/v1.0bu/ee50adeb70c0">
+        <td>{{Name}}</td>
+        <td>{{Money}}</td>
+        <td>{{Debt}}</td>
+        <td>{{Territory controlled}}</td>
+      </tbody>
+    </table>
+  </div>
+    <script src="http://load.sheetsu.com"></script>
   </body>
 </html>
